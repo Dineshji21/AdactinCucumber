@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[tc-002]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-02-06T18:11:03 IST" name="Suite" finished-at="2023-02-06T18:11:03 IST" duration-ms="50">
+    <groups>
+    </groups>
+    <test started-at="2023-02-06T18:11:03 IST" name="smoketesting" finished-at="2023-02-06T18:11:03 IST" duration-ms="50">
+      <class name="Testng.groupexecution1">
+        <test-method signature="testcase2()[pri:0, instance:Testng.groupexecution1@2177849e]" started-at="2023-02-06T18:11:03 IST" name="testcase2" finished-at="2023-02-06T18:11:03 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[tc-002]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testcase2 -->
+      </class> <!-- Testng.groupexecution1 -->
+    </test> <!-- smoketesting -->
+  </suite> <!-- Suite -->
+</testng-results>

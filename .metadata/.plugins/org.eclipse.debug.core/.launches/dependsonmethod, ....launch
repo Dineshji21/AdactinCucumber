@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Automation"/>
+    <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS">
+        <mapEntry key="Testng.demo2" value="families;sumo"/>
+        <mapEntry key="Testng.demotestng1" value="testdemo"/>
+        <mapEntry key="Testng.dependsonmethod" value="car;train;bus;aeroplane"/>
+        <mapEntry key="Testng.innovacationcount" value="testng;automationtesting;manualtesting;selenium"/>
+        <mapEntry key="Testng.priority" value="plug;switching;fan;light"/>
+    </mapAttribute>
+    <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+        <listEntry value="Testng.dependsonmethod"/>
+        <listEntry value="Testng.demotestng1"/>
+        <listEntry value="Testng.priority"/>
+        <listEntry value="Testng.demo2"/>
+        <listEntry value="Testng.innovacationcount"/>
+    </listAttribute>
+    <listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
+    <listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+    <stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+    <intAttribute key="org.testng.eclipse.TYPE" value="1"/>
+</launchConfiguration>

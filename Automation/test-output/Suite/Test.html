@@ -1,0 +1,906 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>67/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Feb 05 20:17:03 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (165 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Testng.demotestng1.testdemo()'><b>testdemo</b><br>Test class: Testng.demotestng1<br/>
+<a href="#Output-889891977" onClick='toggleBox("Output-889891977", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-889891977" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-889891977">
+hi<br/>
+hello<br/>
+bye<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.demotestng1@a3d8174</td></tr>
+<tr>
+<td title='Testng.innovacationcount.automationtesting()'><b>automationtesting</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-892555958" onClick='toggleBox("Output-892555958", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-892555958" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-892555958">
+automation testing<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.innovacationcount.manualtesting()'><b>manualtesting</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-335708295" onClick='toggleBox("Output-335708295", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-335708295" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-335708295">
+manual testing<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.innovacationcount.selenium()'><b>selenium</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-2107443224" onClick='toggleBox("Output-2107443224", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2107443224" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2107443224">
+selenium<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.demotestng1.testdemo()'><b>testdemo</b><br>Test class: Testng.demotestng1<br/>
+<a href="#Output-475603167" onClick='toggleBox("Output-475603167", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-475603167" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-475603167">
+hi<br/>
+hello<br/>
+bye<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.demotestng1@a3d8174</td></tr>
+<tr>
+<td title='Testng.demotestng1.testdemo()'><b>testdemo</b><br>Test class: Testng.demotestng1<br/>
+<a href="#Output-1281414889" onClick='toggleBox("Output-1281414889", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1281414889" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1281414889">
+hi<br/>
+hello<br/>
+bye<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.demotestng1@a3d8174</td></tr>
+<tr>
+<td title='Testng.priority.plug()'><b>plug</b><br>Test class: Testng.priority<br/>
+<a href="#Output-1912821769" onClick='toggleBox("Output-1912821769", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1912821769" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1912821769">
+plug<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.priority@625732</td></tr>
+<tr>
+<td title='Testng.groupexecution2.testcase4()'><b>testcase4</b><br>Test class: Testng.groupexecution2<br/>
+<a href="#Output-750029115" onClick='toggleBox("Output-750029115", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-750029115" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-750029115">
+tc-004<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.groupexecution2@66498326</td></tr>
+<tr>
+<td title='Testng.priority.switching()'><b>switching</b><br>Test class: Testng.priority<br/>
+<a href="#Output-405215542" onClick='toggleBox("Output-405215542", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-405215542" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-405215542">
+switching<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.priority@625732</td></tr>
+<tr>
+<td title='Testng.patchexecution3.screen2()'><b>screen2</b><br>Test class: Testng.patchexecution3<br/>
+<a href="#Output-2135449562" onClick='toggleBox("Output-2135449562", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2135449562" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2135449562">
+screen2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.patchexecution3@272ed83b</td></tr>
+<tr>
+<td title='Testng.groupexecution1.testcase2()'><b>testcase2</b><br>Test class: Testng.groupexecution1<br/>
+<a href="#Output-1094523823" onClick='toggleBox("Output-1094523823", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1094523823" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1094523823">
+tc-002<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.groupexecution1@cad498c</td></tr>
+<tr>
+<td title='Testng.innovacationcount.selenium()'><b>selenium</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-2095486832" onClick='toggleBox("Output-2095486832", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2095486832" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2095486832">
+selenium<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.innovacationcount.automationtesting()'><b>automationtesting</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-91912419" onClick='toggleBox("Output-91912419", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-91912419" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-91912419">
+automation testing<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.innovacationcount.manualtesting()'><b>manualtesting</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-1401316767" onClick='toggleBox("Output-1401316767", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1401316767" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1401316767">
+manual testing<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.demo2.sumo()'><b>sumo</b><br>Test class: Testng.demo2<br/>
+<a href="#Output-443934570" onClick='toggleBox("Output-443934570", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-443934570" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-443934570">
+front wheel<br/>
+backwheel<br/>
+toolkit<br/>
+stering<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.demo2@1e6454ec</td></tr>
+<tr>
+<td title='Testng.groupexecution3.testcase9()'><b>testcase9</b><br>Test class: Testng.groupexecution3<br/>
+<a href="#Output-764419760" onClick='toggleBox("Output-764419760", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-764419760" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-764419760">
+tc-009<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.groupexecution3@41fecb8b</td></tr>
+<tr>
+<td title='Testng.patchexecution2.lenova()'><b>lenova</b><br>Test class: Testng.patchexecution2<br/>
+<a href="#Output-1926004335" onClick='toggleBox("Output-1926004335", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1926004335" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1926004335">
+lenova<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.patchexecution2@120f102b</td></tr>
+<tr>
+<td title='Testng.patchexecution1.bisscut()'><b>bisscut</b><br>Test class: Testng.patchexecution1<br/>
+<a href="#Output-1208442275" onClick='toggleBox("Output-1208442275", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1208442275" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1208442275">
+bisscut<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.patchexecution1@51dcb805</td></tr>
+<tr>
+<td title='Testng.patchexecution2.hp()'><b>hp</b><br>Test class: Testng.patchexecution2<br/>
+<a href="#Output-1594138273" onClick='toggleBox("Output-1594138273", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1594138273" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1594138273">
+hp<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.patchexecution2@120f102b</td></tr>
+<tr>
+<td title='Testng.groupexecution2.testcase5()'><b>testcase5</b><br>Test class: Testng.groupexecution2<br/>
+<a href="#Output-214187874" onClick='toggleBox("Output-214187874", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-214187874" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-214187874">
+tc-005<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.groupexecution2@66498326</td></tr>
+<tr>
+<td title='Testng.patchexecution3.screen3()'><b>screen3</b><br>Test class: Testng.patchexecution3<br/>
+<a href="#Output-673586830" onClick='toggleBox("Output-673586830", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-673586830" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-673586830">
+screen3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.patchexecution3@272ed83b</td></tr>
+<tr>
+<td title='Testng.demotestng1.testdemo()'><b>testdemo</b><br>Test class: Testng.demotestng1<br/>
+<a href="#Output-426394307" onClick='toggleBox("Output-426394307", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-426394307" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-426394307">
+hi<br/>
+hello<br/>
+bye<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.demotestng1@a3d8174</td></tr>
+<tr>
+<td title='Testng.innovacationcount.automationtesting()'><b>automationtesting</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-1076641925" onClick='toggleBox("Output-1076641925", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1076641925" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1076641925">
+automation testing<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.innovacationcount.automationtesting()'><b>automationtesting</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-4766562" onClick='toggleBox("Output-4766562", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4766562" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4766562">
+automation testing<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.dependsonmethod.bus()'><b>bus</b><br>Test class: Testng.dependsonmethod<br/>
+<a href="#Output-2130192211" onClick='toggleBox("Output-2130192211", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2130192211" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2130192211">
+bus<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.dependsonmethod@68c72235</td></tr>
+<tr>
+<td title='Testng.demotestng1.testdemo()'><b>testdemo</b><br>Test class: Testng.demotestng1<br/>
+<a href="#Output-352598575" onClick='toggleBox("Output-352598575", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-352598575" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-352598575">
+hi<br/>
+hello<br/>
+bye<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.demotestng1@a3d8174</td></tr>
+<tr>
+<td title='Testng.groupexecution3.testcase8()'><b>testcase8</b><br>Test class: Testng.groupexecution3<br/>
+<a href="#Output-903525611" onClick='toggleBox("Output-903525611", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-903525611" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-903525611">
+tc-008<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.groupexecution3@41fecb8b</td></tr>
+<tr>
+<td title='Testng.innovacationcount.selenium()'><b>selenium</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-2095064787" onClick='toggleBox("Output-2095064787", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2095064787" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2095064787">
+selenium<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.groupexecution2.testcase6()'><b>testcase6</b><br>Test class: Testng.groupexecution2<br/>
+<a href="#Output-1528923159" onClick='toggleBox("Output-1528923159", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1528923159" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1528923159">
+tc-006<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.groupexecution2@66498326</td></tr>
+<tr>
+<td title='Testng.innovacationcount.selenium()'><b>selenium</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-391183339" onClick='toggleBox("Output-391183339", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-391183339" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-391183339">
+selenium<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.innovacationcount.selenium()'><b>selenium</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-406765571" onClick='toggleBox("Output-406765571", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-406765571" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-406765571">
+selenium<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.innovacationcount.testng()'><b>testng</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-572145572" onClick='toggleBox("Output-572145572", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-572145572" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-572145572">
+testng<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.patchexecution1.tea()'><b>tea</b><br>Test class: Testng.patchexecution1<br/>
+<a href="#Output-2050339061" onClick='toggleBox("Output-2050339061", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2050339061" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2050339061">
+tea<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.patchexecution1@51dcb805</td></tr>
+<tr>
+<td title='Testng.innovacationcount.selenium()'><b>selenium</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-1855610584" onClick='toggleBox("Output-1855610584", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1855610584" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1855610584">
+selenium<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.innovacationcount.selenium()'><b>selenium</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-1529115495" onClick='toggleBox("Output-1529115495", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1529115495" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1529115495">
+selenium<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.innovacationcount.selenium()'><b>selenium</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-2114289475" onClick='toggleBox("Output-2114289475", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2114289475" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2114289475">
+selenium<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.innovacationcount.selenium()'><b>selenium</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-2081652693" onClick='toggleBox("Output-2081652693", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2081652693" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2081652693">
+selenium<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.groupexecution1.testcase3()'><b>testcase3</b><br>Test class: Testng.groupexecution1<br/>
+<a href="#Output-384515747" onClick='toggleBox("Output-384515747", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-384515747" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-384515747">
+tc-003<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.groupexecution1@cad498c</td></tr>
+<tr>
+<td title='Testng.demotestng1.testdemo()'><b>testdemo</b><br>Test class: Testng.demotestng1<br/>
+<a href="#Output-1250142026" onClick='toggleBox("Output-1250142026", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1250142026" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1250142026">
+hi<br/>
+hello<br/>
+bye<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.demotestng1@a3d8174</td></tr>
+<tr>
+<td title='Testng.demotestng1.testdemo()'><b>testdemo</b><br>Test class: Testng.demotestng1<br/>
+<a href="#Output-1967355409" onClick='toggleBox("Output-1967355409", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1967355409" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1967355409">
+hi<br/>
+hello<br/>
+bye<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.demotestng1@a3d8174</td></tr>
+<tr>
+<td title='Testng.innovacationcount.manualtesting()'><b>manualtesting</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-216856121" onClick='toggleBox("Output-216856121", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-216856121" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-216856121">
+manual testing<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.groupexecution1.testcase1()'><b>testcase1</b><br>Test class: Testng.groupexecution1<br/>
+<a href="#Output-1823409783" onClick='toggleBox("Output-1823409783", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1823409783" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1823409783">
+tc-001<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.groupexecution1@cad498c</td></tr>
+<tr>
+<td title='Testng.dependsonmethod.train()'><b>train</b><br>Test class: Testng.dependsonmethod<br/>
+<a href="#Output-1898325501" onClick='toggleBox("Output-1898325501", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1898325501" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1898325501">
+train<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.dependsonmethod@68c72235</td></tr>
+<tr>
+<td title='Testng.innovacationcount.automationtesting()'><b>automationtesting</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-661119548" onClick='toggleBox("Output-661119548", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-661119548" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-661119548">
+automation testing<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.patchexecution2.acer()'><b>acer</b><br>Test class: Testng.patchexecution2<br/>
+<a href="#Output-1058609221" onClick='toggleBox("Output-1058609221", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1058609221" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1058609221">
+acer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.patchexecution2@120f102b</td></tr>
+<tr>
+<td title='Testng.innovacationcount.manualtesting()'><b>manualtesting</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-1896622931" onClick='toggleBox("Output-1896622931", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1896622931" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1896622931">
+manual testing<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.dependsonmethod.car()'><b>car</b><br>Test class: Testng.dependsonmethod<br/>
+<a href="#Output-856055143" onClick='toggleBox("Output-856055143", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-856055143" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-856055143">
+car<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.dependsonmethod@68c72235</td></tr>
+<tr>
+<td title='Testng.innovacationcount.selenium()'><b>selenium</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-646910062" onClick='toggleBox("Output-646910062", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-646910062" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-646910062">
+selenium<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.groupexecution3.testcase7()'><b>testcase7</b><br>Test class: Testng.groupexecution3<br/>
+<a href="#Output-139566260" onClick='toggleBox("Output-139566260", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-139566260" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-139566260">
+tc-007<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.groupexecution3@41fecb8b</td></tr>
+<tr>
+<td title='Testng.innovacationcount.selenium()'><b>selenium</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-1485891705" onClick='toggleBox("Output-1485891705", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1485891705" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1485891705">
+selenium<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.dependsonmethod.aeroplane()'><b>aeroplane</b><br>Test class: Testng.dependsonmethod<br/>
+<a href="#Output-212890971" onClick='toggleBox("Output-212890971", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-212890971" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-212890971">
+aeroplane<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.dependsonmethod@68c72235</td></tr>
+<tr>
+<td title='Testng.innovacationcount.selenium()'><b>selenium</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-837457281" onClick='toggleBox("Output-837457281", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-837457281" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-837457281">
+selenium<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.demo2.families()'><b>families</b><br>Test class: Testng.demo2<br/>
+<a href="#Output-867988177" onClick='toggleBox("Output-867988177", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-867988177" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-867988177">
+mohan<br/>
+vijaya<br/>
+vinoth<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.demo2@1e6454ec</td></tr>
+<tr>
+<td title='Testng.innovacationcount.selenium()'><b>selenium</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-113411247" onClick='toggleBox("Output-113411247", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-113411247" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-113411247">
+selenium<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.innovacationcount.selenium()'><b>selenium</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-1681920301" onClick='toggleBox("Output-1681920301", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1681920301" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1681920301">
+selenium<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.innovacationcount.manualtesting()'><b>manualtesting</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-480903748" onClick='toggleBox("Output-480903748", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-480903748" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-480903748">
+manual testing<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.innovacationcount.selenium()'><b>selenium</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-589273327" onClick='toggleBox("Output-589273327", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-589273327" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-589273327">
+selenium<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.innovacationcount.automationtesting()'><b>automationtesting</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-1873091796" onClick='toggleBox("Output-1873091796", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1873091796" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1873091796">
+automation testing<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.innovacationcount.automationtesting()'><b>automationtesting</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-1182908789" onClick='toggleBox("Output-1182908789", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1182908789" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1182908789">
+automation testing<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.patchexecution1.coffee()'><b>coffee</b><br>Test class: Testng.patchexecution1<br/>
+<a href="#Output-1758008124" onClick='toggleBox("Output-1758008124", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1758008124" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1758008124">
+coffee<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.patchexecution1@51dcb805</td></tr>
+<tr>
+<td title='Testng.innovacationcount.testng()'><b>testng</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-1158676965" onClick='toggleBox("Output-1158676965", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1158676965" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1158676965">
+testng<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.demotestng1.testdemo()'><b>testdemo</b><br>Test class: Testng.demotestng1<br/>
+<a href="#Output-2045036434" onClick='toggleBox("Output-2045036434", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2045036434" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2045036434">
+hi<br/>
+hello<br/>
+bye<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.demotestng1@a3d8174</td></tr>
+<tr>
+<td title='Testng.priority.fan()'><b>fan</b><br>Test class: Testng.priority<br/>
+<a href="#Output-151593342" onClick='toggleBox("Output-151593342", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-151593342" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-151593342">
+fan<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.priority@625732</td></tr>
+<tr>
+<td title='Testng.demotestng1.testdemo()'><b>testdemo</b><br>Test class: Testng.demotestng1<br/>
+<a href="#Output-402249858" onClick='toggleBox("Output-402249858", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-402249858" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-402249858">
+hi<br/>
+hello<br/>
+bye<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.demotestng1@a3d8174</td></tr>
+<tr>
+<td title='Testng.patchexecution3.screen1()'><b>screen1</b><br>Test class: Testng.patchexecution3<br/>
+<a href="#Output-1261031890" onClick='toggleBox("Output-1261031890", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1261031890" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1261031890">
+screen1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.patchexecution3@272ed83b</td></tr>
+<tr>
+<td title='Testng.innovacationcount.automationtesting()'><b>automationtesting</b><br>Test class: Testng.innovacationcount<br/>
+<a href="#Output-1345483087" onClick='toggleBox("Output-1345483087", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1345483087" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1345483087">
+automation testing<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.innovacationcount@2accdbb5</td></tr>
+<tr>
+<td title='Testng.priority.light()'><b>light</b><br>Test class: Testng.priority<br/>
+<a href="#Output-1617838096" onClick='toggleBox("Output-1617838096", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1617838096" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1617838096">
+light<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Testng.priority@625732</td></tr>
+</table><p>
+</body>
+</html>

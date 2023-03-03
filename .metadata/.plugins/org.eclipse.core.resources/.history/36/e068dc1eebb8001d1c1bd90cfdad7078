@@ -1,0 +1,56 @@
+package selenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class BaseClass {
+
+	public static WebDriver driver;
+	public static  void browserlaunch(String type ) {
+		if (type.equalsIgnoreCase("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver =new ChromeDriver();
+
+		}
+		else if (type.equalsIgnoreCase("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver=new FirefoxDriver();
+		}
+		else if (type.equalsIgnoreCase("edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver=new EdgeDriver();
+
+		}
+		else if (type.equalsIgnoreCase("internet")) {
+			WebDriverManager.iedriver().setup();
+			driver=new InternetExplorerDriver();
+
+
+		}
+		driver.manage().window().maximize();
+
+	}
+
+	public static WebDriver geturl(String url) {
+		driver.get(url);
+		return driver;
+	}
+
+	public static void sendinputvalue(WebElement element,String value) {
+		element.sendKeys(value);
+
+	}
+	public static  void clickonelement(WebElement element) {
+		element.click();
+	}
+
+
+
+
+}
